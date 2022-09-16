@@ -1,25 +1,118 @@
-.plus-minus {
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.box{
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 5px solid grey;
+  padding: 50px;
+  gap: 50px;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid;
   border-radius: 5px;
-  width: 220px;
-  height: 60px;
-  margin: auto;
-  margin-top: 100px;
-  
+  padding: 30px;
+  width: 300px;
+  height: 500px;
+}
+.em{
+  display: flex;
+  flex-direction: column;
+  margin-top: 27px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  color: rgb(56, 55, 55);
+
+}
+.emp{
+  width: 230px;
+  height: 34px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.chbox{
+width: 20px;
+}
+.rr{
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
 }
 .btn{
-  width: 70px;
-  height: 60px;
-  color: blue;
-  font-size: 36px;
+  width: 230px;
+  height: 34px;
+  border-radius: 5px;
+  background-color:rgb(234, 39, 71);
+  border: none;
+  margin-top: 20px;
+  color: white;
 }
-.son{
-  width: 80px;
+.btn:hover{
+  width: 236px;
+  height: 36px;
+  opacity: 0.8;
+}
+
+.forgot{
+  margin-left: 122px;
+  margin-top: 5px;
+  font-size: 13px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  color: rgb(88, 81, 81);
+  margin-bottom: 20px;
+}
+.sgn{
+  margin-bottom: 25px;
+}
+
+.footer{
+  padding: 10px;
+  display: flex;
+  gap: 7px;
+  font-weight: 600;
+}
+.ls{
+  color: rgb(46, 45, 45);
+}
+.ls:hover{
+  font-size: 17px;
+  color: red;
+}
+.img1{
+  color: red;
+}
+.icons{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+.icon1{
+  border: 2px solid;
+  border-radius: 50%;
   height: 40px;
+  width: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: red;
+}
+.icon2{
+   border: 2px solid;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(80, 114, 176);
+
 }
