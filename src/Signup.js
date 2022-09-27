@@ -1,17 +1,27 @@
 import React from 'react';
 class Signup extends React.Component {
-
+ constructor(props) {
+        super(props);
+        this.state = {
+          text:' Sign up'
+        }
+    }
   render() {
+    
+    const getName = (e) => {
+    this.setState({text:e.target.value})
+  }
     return (
+      
       <div className='container'>
         <h3>SIGN UP</h3>
         <div className='em'>
           <label htmlFor=''>Email</label>
-          <input className='emp' type='email' />
+          <input className='emp' placeholder='email' type='email' onChange={(e)=> getName(e)} />
         </div>
         <div className='em'>
           <label htmlFor=''>Password</label>
-          <input className='emp' type='password' />
+          <input className='emp' placeholder='password' type='password' />
         </div>
         <div className='sgn'>
           <button className='btn'>SIGN UP</button>
@@ -27,9 +37,10 @@ class Signup extends React.Component {
         <div className='footer'>
           <p className='account'>Already an account</p>
           <a className='ls' href=''>
-            LOGIN
+            LOGIN 
           </a>
         </div>
+        <h4>{this.state.text}</h4>
       </div>
     );
   }
